@@ -35,8 +35,7 @@ function App() {
      <Carousel
       ignoreFirstVideo
       category={dadosIniciais.categorias[3]}
-     />
-     <h1>Titulo</h1>
+     />     
     </div>
   );
 }
