@@ -26,7 +26,9 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const URL = 'https://lucas-alura-flix.herokuapp.com/categorias';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:3000'
+      : 'https://lucas-alura-flix.herokuapp.com/categorias';
     fetch(URL)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
